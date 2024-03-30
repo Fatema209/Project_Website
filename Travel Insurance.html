@@ -1,0 +1,191 @@
+
+<html> 
+<head>
+    <title>Travel Insurance</title>
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="TravelInsurance.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+   
+    <script src="TravelInsurance.js"></script>
+   
+    </head>
+    <body>
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	<div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+    <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+  </nav>
+  <br>
+  <br>
+  <br>
+	 <article>
+  <div id="row-1"></div>
+  <div id="row-2"></div>
+  <div id="row-3"></div>
+  <div id="row-temp">
+	 
+
+
+         <section>
+            <img src="carIn.jpg" alt="Booking" width="100" height="250" style="width:100%">
+           
+              <center><h3 id="back">Car rental insurance</h3>
+              <p class="w3-opacity"><h4 id="text"> when renting a car, including accidents, insurance for the whole vehicle, and a driver’s license. 
+                  <br> When returning the car, it must be in good condition and not have any damage.</h4></p> 
+              <p class="w3-opacity"><h5 id="back">Price:$100</h5></p>
+               <a href="travelinsurance.html#Transport"><button
+               class="w3-button w3-light-grey w3-block"><i class="glyphicon glyphicon-user"></i><a href="PaymentPage.html">Pay Now </button></a></a></center>
+				<br>
+
+
+</section>
+
+
+      <section>
+            <img src="bagIn.jpg" alt="Transport"  width="100" height="267" style="width:100%">
+            
+              <center><h3 id="back">Baggage and property insurance</h3>
+              <p class="w3-opacity"><h4 id="text">In the event of any loss of property, the company is not responsible 
+			  for anything, and the insurance amount is not returned.</h4></p>
+              <p class="w3-opacity"><h5 id="back">Price:$100</h5></p>
+               <a href="travelinsurance.html#Transport"><button
+               class="w3-button w3-light-grey w3-block"><i class="glyphicon glyphicon-user"></i><a href="PaymentPage.html"> Pay Now </button></a></a></center>
+				<br>
+          
+       </section>
+
+
+
+
+
+
+
+        <section>
+            <img src="healthIn.png" alt="travelinsurance" width="100" height="250" style="width:100%">
+           
+             <center> <h3 id="back">health insurance</h3>
+              <p class="w3-opacity"><h4 id="text">Insurance for emergency and children's clinic, women's 
+			  clinic and insurance includes medicines, tests and radiology Not all clinics include this health insurance.</h4></p>
+              <p class="w3-opacity"><h5 id="back">Price:$100</h5></p>
+            <a href="travelinsurance.html#Transport"><button
+               class="w3-button w3-light-grey w3-block"><i class="glyphicon glyphicon-user"></i><a href="PaymentPage.html">  Pay Now </button></a></a></center>
+			<br>
+         
+         
+</section>
+    
+  </div>
+</article>
+      
+         
+    <br>
+    <br>
+	
+	
+	<footer> 
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <a href="http://instagram.com/bilnk_travel_agency"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p>Contact Us</p>
+   <p><span class="glyphicon glyphicon-envelope"></span> Bilink co. 2020 @Bilink.gmail.com </p>
+  <p><span class="glyphicon glyphicon-earphone"></span> Call:3456711</p>
+   </div>
+  </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<html>
+
+<head>
+
+    <title>Andaz Capital Gate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+     <link rel="stylesheet" type="text/css" href="EachHotel.css">
+     <link rel="stylesheet" href="ProgramPage.html">
+     <link rel="stylesheet" href="BookingPage.html">
+     <link rel="stylesheet" href="PaymentPage.html">
+     
+
+</head>
+
+<body>
+
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	<div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+    <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+ 
+  </nav>
+
+	<div id="main" class="container-fluid" style="background-color: #27253F;">
+	<div class="row">
+	<div class="col-sm-12 ">
+		<div id="BH-Hotel">
+		<center>
+		<h2 id="title"> Information </h2><center>
+		<img id="H-img" src="Hotel/UE4.jpg" alt="Andaz Capital Gate"
+		title="Andaz Capital Gate"/>
+		</div>
+
+	<div>
+    <p class="head1">Rating: ★★★★★ </p>
+	<p class="head1"> Lcation: </p> <p class="info"> Ajman </p>
+	<p class="head1"> Price: </p> <p class="info"> One Night = $143.29 </p>
+	<br>
+	<p class="head1">Details: </p><p class="info d1"> The Andaz Capital Gate Abu Dhabi is situated in the famous Capital Gate building and only walking distance from the Exhibition centre. It offers luxury rooms with floor-to-ceiling windows overlooking the city.
+	
+<br><br>The air-conditioned rooms and suites at the Andaz feature a flat-screen TV and an MP3 docking station. They all offer panoramic views of the city and some of them include a deep soaking tub.
+
+<br><br>Guests have 2 restaurants and bars to choose from. Cyan, a modern brasserie and lounge, located on the 18th floor with lounge-style seating and a library area, offers premium teas, coffee, fresh pastries, and snacks. Guests can also enjoy drinks at the Rayana Latin Tapas Bar or the 18 Degrees Bar.
+
+<br><br>The hotel is located in the embassy and government district and is 20 km from Abu Dhabi International Airport. The Yas Marina Circuit and the Ferrari World are a 30-minute drive from the hotel. The Sheikh Zayed Grand Mosque is just 5 km away.
+	</p><br>
+	<a href="https://goo.gl/maps/hV9ckmryGMtNHTGy6" class="link"
+	title="Lcation"><button class="map button1">Show on map</button></a>
+<br> <br>
+	<div>
+	 <div class="row r1" style="background-color: #27253F; padding:10px; ">
+	 <div>
+  <center>
+		<h2 id="title" style="width:97%;"> Picture </h2>
+		</center><br>
+			</div>
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG1.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG2.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG3.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG4.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+	 <div class="row r2" style="background-color: #27253F; padding:10px;">
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG5.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG6.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG7.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG8.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+	 <div class="row r3" style="background-color: #27253F; padding:10px;">
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG9.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG10.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG11.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UG12.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+
+</body>
+</html>

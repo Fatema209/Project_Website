@@ -1,0 +1,249 @@
+<html>
+
+<head>
+
+    <title>Bilnk Travel Agency</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+     <link rel="stylesheet" type="text/css" href="homePage.css">
+     <link rel="stylesheet" href="ProgramPage.html">
+     <link rel="stylesheet" href="BookingPage.html">
+     <link rel="stylesheet" href="PaymentPage.html">
+     
+
+</head>
+
+<body>
+
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><img id="logo" src="logo1.png" alt="logo" width="130px";><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	  <div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+  <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+ 
+  </nav>
+
+
+
+	
+<div class="container">
+  <div  id="myCarousel" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	   <li data-target="#myCarousel" data-slide-to="3"></li>
+	    <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+        
+    <div class="carousel-inner">
+	<div class="item active">
+        <img style="padding-top:30px;" src="sliders/T2.png" width="1200" height="500" alt="Transport" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img style="padding-top:30px;"  src="sliders/T3.png" width="1200" height="500" alt="Travel insurance" style="width:100%;">
+      </div>
+	
+
+      <div class="item">
+        <img style="padding-top:30px;" src="sliders/T5.png" width="1200" height="500" alt="Transport" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img style="padding-top:30px;" src="sliders/T6.png" width="1200" height="500" alt="Travel" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img style="padding-top:30px;"  src="sliders/T4.png" width="1200" height="500" alt="Hotel" style="width:100%;">
+      </div>
+	  
+	
+  
+    </div>
+	    
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+	</div>
+	</div>
+	<br>
+	<center><em><h3 id="text"><p><b>Bilnk Travel Agency</b><br>In our travel and tourism agency, 
+	we care about the customer and provide them with the best hotels with breakfast 
+	and tickets with good seats and all the things that the customer wants at the best price.There are permanent offers during the holidays and holidays and excellent discounts to save money
+	We work for 24 hours so if there is a problem we can solve it quickly without delay.</p></h3></em></center>
+	
+	
+	    <!-- Page Content -->
+ <div class= "container-fluid" style="background-color: #343A40;">
+	 <div class= "row" >
+    <div id="Booking" class="col-xs-12"><h2 align="center" style="font-family:Gabriola;background-color:#ADB5BD;"> Travel with us </h2>
+			<div class="panel panel-info ps">
+					<div  style="background-color:#DEE2E6;" class="panel-heading"><p>Travel insurance</p></div><br><img class="travel-img" src="tr.jfif" alt="insurance" 
+							title="insurance"/>
+						<div class="panel-body">
+							<p style= "text-indent:10px;line-height:4;font-size:20;"> Travel insurance covers the cost of  Medical emergencies, trip cancellation, lost baggage, and a variety of additional perks. </p>
+							<p style= "text-indent:20px;"><a href="Travel Insurance.html"><br>
+							<button class="button button1"><i class="glyphicon glyphicon-user"></i> Choosing Now </button></a></p>
+						</div>
+				</div>
+	<div class="panel panel-info ps">
+					<div class="panel-heading" style="background-color:#DEE2E6;"><p>Air Ticket</p></div><br><img class="travel-img" src="t1.png" alt="Booking" 
+							title="Ticket"/>
+						<div class="panel-body">
+							<p style= "text-indent:10px;line-height:6;font-size:20;"> Take break now by booking a flight ticket to enjoy the beautiful scenery and tourism in the regions of the world.</p>
+							<p style= "text-indent:20px;"><a href="Air Ticket.html"><button
+		   class="button button1"><i class="glyphicon glyphicon-user"></i> Booking Now </button></a></p>
+						</div>
+				</div>
+													<div class="panel panel-info ps">
+					<div  style="background-color:#DEE2E6;" class="panel-heading"><p>Hotel</p></div><br><img class="travel-img" src="ht.jfif" alt="Hotel" 
+							title="Hotel"/>
+						<div class="panel-body">
+							<p style= "text-indent:10px;line-height:2;font-size:20;"> We provide you with 5-star hotels, and you can choose the right hotel for you in terms of the surrounding scenery and its best location for you. </p>
+							<p style= "text-indent:20px;"><a href="Hotel.html"><br>
+							<button class="button button1"><i class="glyphicon glyphicon-user"></i> Choosing Now </button></a></p>
+						</div>
+				</div>
+									<div class="panel panel-info ps">
+					<div  style="background-color:#DEE2E6;" class="panel-heading"><p>Transportation reservation</p></div><br><img class="travel-img" src="cars.jpg" alt="Transportation" 
+							title="Transportation"/>
+						<div class="panel-body">
+							<p style= "text-indent:10px;line-height:3;font-size:20;"> We provide you with the most luxurious and comfortable transportation that makes you happy during the trip.</p>
+							<p style= "text-indent:20px;"><a href="Transport.html"><br>
+							<button class="button button1"><i class="glyphicon glyphicon-user"></i> Looking Now </button></a></p>
+						</div>
+				</div>
+	</div>
+	</div>
+
+</div>
+</div>
+<br>
+	 <div class="col-md-5 col-md-offset-1 ">
+	  <div class="container2">
+	 <img src="00.jpg "alt="paris" style="width:300px; height:200px;">
+	 <div class="city"><p>Paris</p></div>
+	 </div>
+	</div>
+	 <div class="col-md-5 col-md-offset-1">
+	  <div class="container2">
+	 <img src="egypt.jpg "alt="egypt" style="width:300px; height:200px;">
+	 <div class="city"><p>Egypt</p></div>
+	 </div>
+	</div>
+
+	 <br>
+	 <br>
+	 <br>
+	
+	<br>
+	<br>
+	
+<footer> 
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <a href="http://instagram.com/bilnk_travel_agency"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p>Contact Us</p>
+   <p><span class="glyphicon glyphicon-envelope"></span> Bilink co. 2020 @Bilink.gmail.com </p>
+  <p><span class="glyphicon glyphicon-earphone"></span> Call:3456711</p>
+   </div>
+  </div>
+  </div>
+</footer>
+</body>
+</html>

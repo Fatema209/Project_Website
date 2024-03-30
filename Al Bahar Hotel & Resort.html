@@ -1,0 +1,210 @@
+<html>
+
+<head>
+
+    <title>Al Bahar Hotel & Resort</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+     <link rel="stylesheet" type="text/css" href="EachHotel.css">
+     <link rel="stylesheet" href="ProgramPage.html">
+     <link rel="stylesheet" href="BookingPage.html">
+     <link rel="stylesheet" href="PaymentPage.html">
+     
+
+</head>
+
+<body>
+
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	<div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+    <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+ 
+  </nav>
+
+	<div id="main" class="container-fluid" style="background-color: #27253F;">
+	<div class="row">
+	<div class="col-sm-12 ">
+		<div id="BH-Hotel">
+		<center>
+		<h2 id="title"> Information </h2><center>
+		<img id="H-img" src="Hotel/UE2.jpg" alt="Al Bahar Hotel & Resort"
+		title="Al Bahar Hotel & Resort"/>
+		</div>
+
+	<div>
+    <p class="head1">Rating: ★★★★ </p>
+	<p class="head1"> Lcation: </p> <p class="info"> Fujairah </p>
+	<p class="head1"> Price: </p> <p class="info"> One Night = $161.86 </p>
+	<br> <br>
+	<p class="head1">Details: </p><p class="info d1"> Located in Fujairah, 1.7 km from Umbrella Beach, Al Bahar Hotel & Resort provides accommodation with a restaurant, free private parking, an outdoor swimming pool and a fitness centre. Among the various facilities of this property are a shared lounge, a garden and a private beach area. The accommodation features a 24-hour front desk, room service and currency exchange for guests.
+	
+<br><br>Al Bahar Hotel & Resort offers 5-star accommodation with a hot tub and children's playground. You can play table tennis at the accommodation, and car hire is available.
+
+<br><br>The property has an on-site sauna, hairdresser's and business centre.
+
+<br><br>Fujairah Mall is 5 km from Al Bahar Hotel & Resort. The nearest airport is Fujairah International Airport, 4 km from the resort.
+	</p><br>
+	<a href="https://g.page/albaharhotelandresort?share" class="link"
+	title="Lcation"><button class="map button1">Show on map</button></a>
+<br> <br>
+	<div>
+	 <div class="row r1" style="background-color: #27253F; padding:10px; ">
+	 <div>
+  <center>
+		<h2 id="title" style="width:97%;"> Picture </h2>
+		</center><br>
+			</div>
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB1.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB2.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB3.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB4.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+	 <div class="row r2" style="background-color: #27253F; padding:10px;">
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB5.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB6.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB7.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB8.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+	 <div class="row r3" style="background-color: #27253F; padding:10px;">
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB9.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB10.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB11.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UB12.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+
+</body>
+</html>

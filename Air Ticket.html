@@ -1,0 +1,249 @@
+<html>
+<head>
+
+    <title>Air Ticket</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+     <link rel="stylesheet" type="text/css" href="Air Ticket.css">
+     <link rel="stylesheet" href="ProgramPage.html">
+     <link rel="stylesheet" href="BookingPage.html">
+     <link rel="stylesheet" href="PaymentPage.html">
+     
+
+</head>
+<body>
+
+ <script>
+            function confirm()
+                {
+                    if ((document.getElementById("name").value!="")&&((document.getElementById("email").value!=""))
+                    {
+                        alert("You have successfully paid for your tickets!khjkkk!");
+                    }
+                    else 
+                    {
+                        alert("Please fill in all field!!");
+                    }
+            }
+            </script>
+			
+			
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	<div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+    <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+ 
+  </nav>
+  <form method="post" id="form" style="background-color: aliceblue;">
+            <div class= "row" >
+                <div  class="col-md-3 ">
+               <div id="navbar" class="container">
+         <label class="form-label form-label-left form-label-auto" id="label_21" for="input_21" style=" font-size: 1.25em;font-family: 'Nanum Gothic';"> Type of Trip </label>
+           <div id="cid_21" class="form-input" data-layout="full">
+		 <input type="radio" name="trip" id="one-way"> One-Way &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" default name="trip" id="Return">  Return
+			</div>
+			</div>
+		</div>
+			</div>
+				</div>
+				
+				
+				
+				
+				
+				
+
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input class="input" type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input class="input" type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input class="input" type="tel" id="phone" name="visitor_phone" placeholder="+973 0065 6789" max="14" required>
+  </div class="elem-group">
+  <label for="number">Choose the number of tickets</label>
+      <input class="input" type="number" id="Choose" min = "1" max = "30" placeholder="0" >
+  <hr>
+  <div class="elem-group">
+    <label for="Country-selection">Flying From</label>
+ <select id="country" name="TravelFrom" required>
+                    <option value="bh">Bahrain</option>
+                    <option value="ksa">KSA</option>
+					<option value="Kw">Kuwait</option>
+                    <option value="usa">UAE</option>
+                    </select>
+</div>
+  <div class="elem-group">
+    <label for="Country-selection">Flying To</label>
+ <select id="country" name="TravelTo" required>
+                    <option value="bh">Bahrain</option>
+                    <option value="ksa">KSA</option>
+					<option value="Kw">Kuwait</option>
+                    <option value="usa">UAE</option>
+                    </select>
+</div>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input class="input" type="number" id="adult" name="total_adults" placeholder="1" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input class="input" type="number" id="child" name="total_children" placeholder="1" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input class="input" type="datetime-local" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input class="input" type="datetime-local" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
+  </div>
+  
+  <button type="button" onclick="confirm()">Confirm</button>
+  
+  <br>
+  <br>
+            <button type="button" onclick="pay()"><a href="PaymentPage.html">Pay Now</button></a>
+            <br>
+  </form>
+ 
+  
+   <script>
+            function confirm()
+                {
+                    if (document.getElementById("email").value!="")
+                    {
+                        alert("You will receive the total amount on SMS soon ");
+                    }
+                    else 
+                    {
+                        alert("Please fill in all field!!");
+                    }
+            }
+            </script>
+			
+			<script>
+            function pay()
+                {
+                    if (document.getElementById("email").value!="")
+                    {
+                        alert("You will be directed to the payment page ");
+                    }
+                    else 
+                    {
+                        alert("Please fill in all field!!");
+                    }
+            }
+            </script>
+			<footer> 
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <a href="http://instagram.com/bilnk_travel_agency"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p>Contact Us</p>
+   <p><span class="glyphicon glyphicon-envelope"></span> Bilink co. 2020 @Bilink.gmail.com </p>
+  <p><span class="glyphicon glyphicon-earphone"></span> Call:3456711</p>
+   </div>
+  </div>
+  </div>
+</footer>
+			
+</body>
+</html>

@@ -1,0 +1,210 @@
+<html>
+
+<head>
+
+    <title>Bahi Ajman Palace Hotel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+     <link rel="stylesheet" type="text/css" href="EachHotel.css">
+     <link rel="stylesheet" href="ProgramPage.html">
+     <link rel="stylesheet" href="BookingPage.html">
+     <link rel="stylesheet" href="PaymentPage.html">
+     
+
+</head>
+
+<body>
+
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	<div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+    <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+ 
+  </nav>
+
+	<div id="main" class="container-fluid" style="background-color: #27253F;">
+	<div class="row">
+	<div class="col-sm-12 ">
+		<div id="BH-Hotel">
+		<center>
+		<h2 id="title"> Information </h2><center>
+		<img id="H-img" src="Hotel/UE3.jpg" alt="Bahi Ajman Palace Hotel"
+		title="Bahi Ajman Palace Hotel"/>
+		</div>
+
+	<div>
+    <p class="head1">Rating: ★★★★★ </p>
+	<p class="head1"> Lcation: </p> <p class="info"> Ajman </p>
+	<p class="head1"> Price: </p> <p class="info"> One Night = $137.98 </p>
+	<br> <br>
+	<p class="head1">Details: </p><p class="info d1"> Set on a private beach, Bahi Ajman Palace Hotel is a heritage retreat that offers views of the Arabian Gulf and the city. It features luxurious accommodations with free WiFi, an outdoor pool and a gym.
+	
+<br><br>Featuring a French balcony or terrace, all rooms and residences at Bahi Ajman Palace Hotel and Resort offer a sea or city view equipped with a flat-screen TV, a minibar and an electric kettle. The apartment includes a spacious living room.
+
+<br><br>With an array of restaurants and lounge options, as well as attentive 24-hour room service, the hotel serves a myriad of cuisines from around the world and offers a breakfast buffet every morning.
+
+<br><br>The hotel is a picturesque sanctuary conveniently located 22 km from Dubai International Airport and 11 km from Sharjah International Airport. An airport transfer service is available at extra cost upon request.
+	</p><br>
+	<a href="https://g.page/BahiAjman?share" class="link"
+	title="Lcation"><button class="map button1">Show on map</button></a>
+<br> <br>
+	<div>
+	 <div class="row r1" style="background-color: #27253F; padding:10px; ">
+	 <div>
+  <center>
+		<h2 id="title" style="width:97%;"> Picture </h2>
+		</center><br>
+			</div>
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA1.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA2.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA3.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA4.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+	 <div class="row r2" style="background-color: #27253F; padding:10px;">
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA5.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA6.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA7.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA8.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+	 <div class="row r3" style="background-color: #27253F; padding:10px;">
+	 <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA9.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA10.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+ <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA11.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+  <div class="col-sm-3">
+	  <div class="panel panel-info ps">
+    <img src="Hotel/UAE/UA12.jpg" alt="hotel" style="width:100%">
+  </div>
+  </div>
+</div>
+
+</body>
+</html>

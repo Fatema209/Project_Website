@@ -1,0 +1,405 @@
+<html>
+<head>
+    <title>Booking</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="BookingPage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	  <div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+  <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+ 
+  </nav>
+  
+   <h1 align="center" style="padding-top: 100; font-family:Forte;">Book Your Ticket</h1>
+        <br>
+       
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm-4" style="background-color:white; margin-left: 150; margin-right: 50;">
+    <form action="" method="post">
+
+<p>Enter your name: </p>
+        <input type="text" required id="un">        
+        <br><br>
+
+<p>Select the Air Ticket code:</p>
+        <select name="aTicket" id="dropdown">
+            <option value="code1" >Bahrain</option>
+            <option value="code2">KSA</option>
+            <option value="code3">Kuwait</option>
+            <option value="code4">UAE</option>
+        </select>
+		
+		<br><br>
+		
+		 <p>Enter Number of Tickets: </p>
+        <input type=number required name=tickets min=1 id="tic">
+		<br><br>
+		 <p>Select a hotel star:</p>
+		 <input type="radio" name="class" id="Non"> Non
+        <input type="radio" default name="class" id="star4"> 4 star
+        <input type="radio" name="class" id="star5"> 5 star
+		
+		<br><br>
+		
+		
+		
+		<p>Select Transportation reservation:</p>
+		 <input type="radio" name="c" id="Non"> Non
+        <input type="radio" default name="c" id="car1">  car
+        <input type="radio" name="c" id="car2"> bus
+		
+		
+		<br><br>
+		
+		<p>Enter Discount Code: </p>
+        <input type="text" id="code">
+		
+        <br><br>
+<button type="button" onclick="confirm()">Confirm</button>
+        
+        </form>
+        </div>
+		
+		<div class="col-sm-4" style="background-color:ghostwhite; padding-bottom: 10;">
+        <h2>Ticket Summary</h2>
+            
+            <table>
+                <tr>
+                    <td>Booked by: </td>
+                    <td id="booked"></td>
+                </tr>
+                <tr>
+                <td>Air Ticket: </td>
+                <td id="aTicket"></td>
+                </tr>
+                <tr>
+                <td>Venue: </td>
+                <td id="venue"></td>
+                </tr>
+                <tr>
+                <td>Transportation reservation: </td>
+                <td id="c"></td>
+                </tr>
+               
+              <tr>
+                <td>Time: </td>
+                <td id="timing"></td>
+                </tr>
+                <td>No. of Tickets: </td>
+                <td id="notic"></td>
+                </tr>
+                <tr>
+                <td>Sub Total: </td>
+                <td id="sub"></td>
+                </tr>
+                <tr>
+                <td>Discount: </td>
+                <td id="disc"></td>
+                </tr>
+                <tr>
+                <td>Amount Payable: </td>
+                <td id="amount"></td>
+                </tr>
+            </table>
+            <br>
+            <a href="PaymentPage.html"><button>Pay Now</button></a>
+            <br>
+            
+        </div>
+            <br>
+			 <div class="col-md-4">
+
+	 <div class="row">
+	 <figure>
+	  <img src="ds2.gif" alt="discount" style="width:100%">
+	  <br>
+	  <center> <figcaption><b>Code:A123</b></figcaption></center>
+	 
+	  </figure> <br>
+	 </div>
+        </div>
+		
+        </div>
+
+
+<script> 
+            
+                const cA=1000;
+                const cB=500;
+                const cNon=0;
+				
+                var subtotal;
+                var discount;
+                var amount;
+                var uname;
+            var tickets;
+            var discode;
+                        
+                function confirm()
+            {
+                if ((document.getElementById("un").value!="")&&(document.getElementById("tic").value!=0)){
+                uname= document.getElementById("un").value;
+                document.getElementById("booked").innerHTML=uname;
+                
+                switch(document.getElementById("dropdown").value)
+                {
+                    case 'code1':
+                        document.getElementById("aTicket").innerHTML=" Bahrain";
+                        document.getElementById("venue").innerHTML=" Gate1";
+						document.getElementById("timing").innerHTML=" 12:15pm";
+                        break;
+                    case 'code2':
+                        document.getElementById("aTicket").innerHTML=" KSA";
+                        document.getElementById("venue").innerHTML=" Gate2";
+						document.getElementById("timing").innerHTML=" 9:00am";
+                        break;
+                    case 'code3':
+                        document.getElementById("aTicket").innerHTML=" Kuwait";
+                        document.getElementById("venue").innerHTML=" Gate3";
+						document.getElementById("timing").innerHTML=" 3pm";
+                        break;
+                     case 'code4':
+                        document.getElementById("aTicket").innerHTML=" UAE";
+                        document.getElementById("venue").innerHTML=" Gate4";
+						document.getElementById("timing").innerHTML=" 6:30 am";
+                        break;
+                }
+                
+                tickets =document.getElementById("tic").value;
+                document.getElementById("notic").innerHTML=tickets;
+                
+                
+                
+               
+                
+				if (document.getElementById("Non").checked)
+                    {
+                       document.getElementById("c").innerHTML="non";
+                       
+                        subtotal= cA*ticket;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";
+						
+						
+                    }
+					
+					else
+					
+					
+					
+					
+					if (document.getElementById("star4").checked)
+                    {
+                       document.getElementById("c").innerHTML="star4";
+                       
+                        subtotal= 100+cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";
+						
+						if (document.getElementById("Non").checked)
+                    {
+                       document.getElementById("c").innerHTML="Non";
+                       
+                        subtotal= cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";}
+						
+						
+						
+						if (document.getElementById("car1").checked)
+                    {
+                       document.getElementById("c").innerHTML="   car";
+                       
+                        subtotal= 75+cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";}
+						
+						if (document.getElementById("car2").checked)
+                    {
+                       document.getElementById("c").innerHTML="   bus";
+                       
+                        subtotal= 150+cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";}
+
+
+                    
+                    }
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					if (document.getElementById("star5").checked)
+                    {
+                       document.getElementById("c").innerHTML="star5";
+                       
+                        subtotal= 150+cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";
+						
+						if (document.getElementById("Non").checked)
+                    {
+                       document.getElementById("c").innerHTML="Non";
+                       
+                        subtotal= cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";}
+						
+						
+						
+						if (document.getElementById("car1").checked)
+                    {
+                       document.getElementById("c").innerHTML="car";
+                       
+                        subtotal= 100+cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";}
+						
+						if (document.getElementById("car2").checked)
+                    {
+                       document.getElementById("c").innerHTML="bus";
+                       
+                        subtotal= 175+cA*tickets;
+                        document.getElementById("sub").innerHTML=subtotal+" BD";}
+
+                    
+                    }
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				 discode=document.getElementById("code").value;
+				
+                if (discode=="A123")
+                
+                {
+                    discount= subtotal*0.2;
+                    document.getElementById("disc").innerHTML=discount+" BD";
+                    amount= subtotal-discount;
+                    document.getElementById("amount").innerHTML=amount+" BD";
+                }
+                else
+                {
+                    discount=0;
+                    document.getElementById("disc").innerHTML=discount+" BD";
+                    amount=subtotal;
+                    document.getElementById("amount").innerHTML=amount+" BD";
+                }
+                }
+                else {
+                    alert("Please fill in all fields!!");
+                }
+            }
+            
+            
+            
+        </script>
+
+<br> <br>
+</body>
+</html>

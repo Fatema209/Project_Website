@@ -1,0 +1,297 @@
+<html>
+
+<head>
+
+    <title>Hotel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+     <link rel="stylesheet" type="text/css" href="Hotel.css">
+     <link rel="stylesheet" href="ProgramPage.html">
+     <link rel="stylesheet" href="BookingPage.html">
+     <link rel="stylesheet" href="PaymentPage.html">
+     
+
+</head>
+
+<body>
+
+<nav id="nav"  class="navbar navbar-inverse "> 
+
+     <div class="container-fluid">
+	 <br>
+	 <br>
+	 <br>
+	<div class= "row" >
+    
+	  <center><h3 style="color:black; 
+	  font-family:Edwardian Script ITC; font-size:50px;">
+	  <b>Bilnk Travel Agency</b></h3></center>
+	 
+	  </div>
+	<br>
+	
+	 
+	 
+	<div style="background-color: #d1ccc0;" class= "row navbar-fixed-top" >
+	  <div  class="col-md-3 ">
+     <div id="navbar" class="container">
+
+     <ul  style="font-size:18px; font-family:STCaiyun;" class="nav nav-pills ">
+	
+	 <li><a style="color:black;" href="homePage.html"><i class="glyphicon glyphicon-home" ></i> Home page</a></li>
+     <li><a style="color:black;" href="Travel Insurance.html">Travel insurance</a></li>
+     <li><a style="color:black;" href="Air Ticket.html">Air Ticket</a></li>
+	 <li><a style="color:black;" href="Hotel.html">Hotel</a></li>
+	 <li><a style="color:black;" href="Transport.html">Transportation reservation</a></li>
+	 <li><a style="color:black;" href="BookingPage.html">Booking</a></li>
+	 </ul>
+	 
+	
+  
+  </div>
+  </div>
+  
+    <div  class="col-md-3 col-md-offset-6">
+	 <div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">  <i class="glyphicon glyphicon-search"></i></button>
+  <div  id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search for artistes.." id="myInput" onkeyup="filterFunction()">
+    <a href="BookingPage.html">Booking</a>
+    <a href="Travel Insurance.html">travel insurance</a>
+    <a href="Air Ticket.html">Air Ticket</a>
+    <a href="Transport.html">Transportation reservation</a>
+    <a href="Hotel.html">Hotel</a>
+  
+  </div>
+  
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  </div>
+</div>
+</div>
+ 
+  </nav>
+
+
+    <!-- Bahrain Hotel -->
+<div class="container" style="background-color: #0C637F;">
+<center><h1 class="Name-Hotel">Bahrain</h1></center>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> The Westin City Centre <center></p></div><img class="hotel-img" src="Hotel/BHG1.jpg" alt="The Westin City Centre" 
+							title="The Westin City Centre" width="15%" style="float:left; border-radius: 10px;"/>
+						<br><div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="The Westin City Centre.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Four Seasons Hotel <center></p></div><img class="hotel-img" src="Hotel/BHG2.jpeg" alt="Four Seasons Hotel" 
+							title="Four Seasons Hotel" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Four Seasons Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> The Domain Hotel <center></p></div><img class="hotel-img" src="Hotel/BHG3.jpg" alt="The Domain Hotel " 
+							title="The Domain Hotel" width="20%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="The Domain Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+	<div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Wyndham Grand Hotel <center></p></div><img class="hotel-img" src="Hotel/BHG4.jpg" alt="Wyndham Grand Hotel" 
+							title="Wyndham Grand Hotel" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Wyndham Grand Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+  </div>
+</div>
+<!-- KSA Hotel -->
+<div class="container" style="background-color: #0C637F;">
+<center><h1 class="Name-Hotel">Saudi Arabia</h1></center>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Sheraton Dammam Hotel <center></p></div><img class="hotel-img" src="Hotel/SH1.jpg" alt="Sheraton Dammam Hotel" 
+							title="Sheraton Dammam Hotel" width="15%" style="float:left; border-radius: 10px;"/>
+						<br><div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Sheraton Dammam Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center>  Al Faisaliah Hotel <center></p></div><img class="hotel-img" src="Hotel/SH2.jpg" alt="Al Faisaliah Hotel" 
+							title="Al Faisaliah Hotel" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★ </p>
+						<p><a href="Al Faisaliah Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> The Venue Jeddah <center></p></div><img class="hotel-img" src="Hotel/SH3.jpg" alt="The Venue Jeddah" 
+							title="The Venue Jeddah" width="20%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="The Venue Jeddah.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+	<div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Hyatt Regency Riyadh Olaya <center></p></div><img class="hotel-img" src="Hotel/SH4.jpg" alt="Hyatt Regency Riyadh Olaya" 
+							title="Hyatt Regency Riyadh Olaya" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Hyatt Regency Riyadh Olaya.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+  </div>
+</div>
+<!-- Kuwait Hotel -->
+<div class="container" style="background-color: #0C637F;">
+<center><h1 class="Name-Hotel">Kuwait</h1></center>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Millennium Hotel Kuwait <center></p></div><img class="hotel-img" src="Hotel/KH1.jpg" alt="Millennium Hotel Kuwait" 
+							title="Millennium Hotel Kuwait" width="15%" style="float:left; border-radius: 10px;"/>
+						<br><div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Millennium Hotel Kuwait.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center>  Hyatt Regency Al Kout Mall <center></p></div><img class="hotel-img" src="Hotel/KH2.jpg" alt="Hyatt Regency Al Kout Mall" 
+							title="Hyatt Regency Al Kout Mall" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Hyatt Regency Al Kout Mall.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Symphony Style Hotel <center></p></div><img class="hotel-img" src="Hotel/KH3.jpg" alt="Symphony Style Hotel" 
+							title="Symphony Style Hotel" width="20%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★ </p>
+						<p><a href="Symphony Style Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+	<div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> The Palms Beach Hotel <center></p></div><img class="hotel-img" src="Hotel/KH4.jpg" alt="The Palms Beach Hotel & Spa" 
+							title="The Palms Beach Hotel & Spa" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="The Palms Beach Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+  </div>
+</div>
+<!-- UAE Hotel -->
+<div class="container" style="background-color: #0C637F;">
+<center><h1 class="Name-Hotel">United Arab Emirates</h1></center>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Crowne Plaza Dubai Marina <center></p></div><img class="hotel-img" src="Hotel/UH1.jpg" alt="Crowne Plaza Dubai Marina" 
+							title="Crowne Plaza Dubai Marina" width="15%" style="float:left; border-radius: 10px;"/>
+						<br><div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Crowne Plaza Dubai Marina.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center>  Al Bahar Hotel & Resort <center></p></div><img class="hotel-img" src="Hotel/UH2.jpg" alt="Al Bahar Hotel & Resort" 
+							title="Al Bahar Hotel & Resort" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★ </p>
+						<p><a href="Al Bahar Hotel & Resort.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+    <div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Bahi Ajman Palace Hotel <center></p></div><img class="hotel-img" src="Hotel/UH3.jpeg" alt="Bahi Ajman Palace Hotel" 
+							title="Bahi Ajman Palace Hotel" width="20%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Bahi Ajman Palace Hotel.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+	<div class="col-sm-3">
+     <div class="panel panel-info ps">
+					<div class="panel-heading"><p><center> Andaz Capital Gate <center></p></div><img class="hotel-img" src="Hotel/UH4.jpg" alt="Andaz Capital Gate Abu Dhabi" 
+							title="Andaz Capital Gate Abu Dhabi" width="10%" style="float:left; border-radius: 10px;" />
+						<div class="panel-body"><p> Rating: ★★★★★ </p>
+						<p><a href="Andaz Capital Gate.html"><center>Information about hotel</center></a>
+						</div>
+				</div>
+    </div>
+  </div>
+</div>
+
+<footer> 
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <a href="http://instagram.com/bilnk_travel_agency"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p>Contact Us</p>
+   <p><span class="glyphicon glyphicon-envelope"></span> Bilink co. 2020 @Bilink.gmail.com </p>
+  <p><span class="glyphicon glyphicon-earphone"></span> Call:3456711</p>
+   </div>
+  </div>
+  </div>
+</footer>
+	 </body>
+	 </html>
